@@ -25,6 +25,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv-webpack": "^1.7.0",
     "promise-middleware": "^1.0.7",
     "promise-middleware-redux": "^1.0.6",
     "react": "^16.8.6",

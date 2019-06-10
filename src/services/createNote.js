@@ -1,6 +1,3 @@
-export const createNote = (_id, note) => {
-  return Promise.resolve({
-    _id: '12345',
-    payload: note
-  });
-};
+import { post } from './requests';
+
+export const createNote = note => post('api/v1/notes', note);
