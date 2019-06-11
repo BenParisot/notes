@@ -12,5 +12,6 @@ export const [
 export const [
   fetchNotes,
   FETCH_NOTES,
-  FETCH_NOTES_PENDING
+  FETCH_NOTES_PENDING,
+  FETCH_NOTES_REJECTED
 ] = createAction('FETCH_NOTES', getNotes);

@@ -13,7 +13,6 @@ class AllNotes extends PureComponent {
     }
 
     componentDidMount() {
-      console.log('gonna try to fetch');
       this.props.fetch();
     }
 

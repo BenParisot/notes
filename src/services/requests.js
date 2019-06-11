@@ -1,4 +1,4 @@
-const request = (path, method, body = {}) => {
+const request = (path, method, body) => {
   // eslint-disable-next-line no-undef
   return fetch(`${process.env.API_URL}${path}`, {
     method,
@@ -7,7 +7,6 @@ const request = (path, method, body = {}) => {
   })
     .then(res => ([res.ok, res.json()]))
     .then(([ok, json]) => {
-      // if(!ok) console.log('this aint okay');
       if(!ok) throw `Unable to reach ${path}`;
       return json;
     });
