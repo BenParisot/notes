@@ -6,7 +6,7 @@ import { fetchNotes } from '../actions/createNotes';
 import { getNotes, getNotesLoading } from '../selectors/noteSelectors';
 
 class AllNotes extends PureComponent {
-    static PropTypes = {
+    static propTypes = {
       notes: PropTypes.array.isRequired,
       loading: PropTypes.bool.isRequired,
       fetch: PropTypes.func.isRequired
