@@ -63,7 +63,7 @@ describe('notes reducer', () => {
 
     expect(newState).toEqual({
       loading: false,
-      list: [[{ title: 'hi', body: 'bye' }]]
+      list: [{ title: 'hi', body: 'bye' }]
     });
   });
 });
