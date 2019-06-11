@@ -1,2 +1,2 @@
 export const getNotes = state => state.notes.list;
-export const getNoteLoading = state => state.notes.loading;
+export const getNotesLoading = state => state.notes.loading;
