@@ -1,9 +1,9 @@
 import { WebAuth } from 'auth0-js';
 
 const auth0 = new WebAuth({
-  domain: 'benparisot.auth0.com',
-  clientID: 'Fu3l0uU16MnUvUbKLuLQ6V2zryL4IYW3',
-  redirectUri: 'http://localhost:7890/callback',
+  domain: process.env.AUTH_DOMAIN,
+  clientID: process.env.AUTH_CLIENT_ID,
+  redirectUri: process.env.AUTH_CALLBACK,
   responseType: 'token id_token',
   scope: 'openid profile'
 });
