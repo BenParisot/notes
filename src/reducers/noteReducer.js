@@ -3,7 +3,7 @@ import {
   NEW_NOTE_PENDING,
   FETCH_NOTES,
   FETCH_NOTES_PENDING
- } from '../actions/createNotes';
+} from '../actions/createNotes';
 
 const initialState = {
   loading: false,
