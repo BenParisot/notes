@@ -7,6 +7,7 @@ const request = (path, method, body = {}) => {
   })
     .then(res => ([res.ok, res.json()]))
     .then(([ok, json]) => {
+      console.log(json);
       if(!ok) throw `Unable to reach ${path}`;
       return json;
     });
