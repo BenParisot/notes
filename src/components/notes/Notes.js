@@ -23,3 +23,5 @@ Notes.propTypes = {
     body: PropTypes.string.isRequired
   })).isRequired
 };
+
+export default Notes;
