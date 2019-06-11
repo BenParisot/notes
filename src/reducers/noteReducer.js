@@ -1,4 +1,9 @@
-import { NEW_NOTE, NEW_NOTE_PENDING } from '../actions/createNotes';
+import { 
+  NEW_NOTE, 
+  NEW_NOTE_PENDING,
+  FETCH_NOTES,
+  FETCH_NOTES_PENDING
+ } from '../actions/createNotes';
 
 const initialState = {
   loading: false,
@@ -17,6 +22,10 @@ export default function(state = initialState, action) {
           action.payload
         ]
       };
+    case FETCH_NOTES_PENDING:
+      return { ...state, loading: true };
+    case FETCH_NOTES:
+      return { ...state, loading: false, list: action.payload };
     default:
       return state;
   }
